@@ -34,7 +34,7 @@ void loop() {
     } 
    if (readString.length() >=5) {
       //Serial.println(readString);
-     if (readString[0] == 57){
+     if (readString[0] == '9'){
        inDialogue = false;
      }
      
@@ -42,7 +42,7 @@ void loop() {
     
     //Serial.println(readString[i]); 
     
-    if (readString[i] == 49){
+    if (readString[i] == '1'){
       digitalWrite(myPins[i], HIGH);
     }else{
      digitalWrite(myPins[i], LOW);
